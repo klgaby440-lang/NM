@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW MENTOR</title>
+    <style>
+        *, *::after, *::before {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e6e2e2;
+            font-family: sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px solid black;
+            gap: 20px;
+            font-size: 30px;
+            margin-bottom: 20px;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .logo-restaurant {
+            width: 5rem;
+            height: 4rem;
+        }
+
+        main {
+            padding: 1.8rem;
+            color:rgb(17, 17, 17)
+        }
+
+        .frame-name-restaurant {
+            text-align: center;
+        }
+        #name-restaurant {
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #image-restaurant {
+            width: 100%;
+            height: 100%;
+            border: none;
+            text-align: center;
+            margin: 4rem 0%;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            border: 3px solid rgb(0, 0, 0, 0.3);
+            margin-bottom: 2.5rem;
+            padding: 2.5rem;
+            border-radius: 3rem;
+        }
+
+        .form-div {
+            padding: 0.3rem;
+            display: block;
+        }
+        .button-anulation {
+            color: darkblue;
+            background-color: #e6e2e2;
+        }
+        .button-send {
+            background-color: darkblue;
+            color: white;
+        }
+        .links {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .links a {
+            text-decoration: none;
+            border-bottom: 2px solid black;
+            margin-bottom: 1rem;
+            color: black;
+        }
+
+        .links span {
+            font-size: 25px;
+        }
+
+        .links a:hover {
+            color: grey;
+            border-bottom: 2px solid grey;
+            cursor: pointer;
+        }
+
+        button, input, textarea {
+            border-radius: 0.4rem;
+            border: none;
+            padding: 0.8rem;
+        }
+        .head-form, form {
+            margin-top: 1.2rem;
+            width: 100%;
+            font-weight: 500;
+        }
+        .head-form {
+            text-align: center;
+            font-size: 1.7rem;
+        }
+        input, textarea {
+            border: 1px solid grey;
+            opacity: 0.7;
+            width: 100%;
+            padding: 1.2rem 0.7rem;
+            background-color: #e6e2e2;
+        }
+        .button-set, #datetime {
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            margin-bottom: 10px;
+        }
+        .time, .date {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 2rem;
+        }
+
+        footer {
+            border-top: 2px solid black;
+            font-style: inherit;
+            padding: 1.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-restaurant"><img src="c:\Users\KL GABY\Videos\Site Web\IMG-20260610-WA0004 (2).jpg" alt="klimgtest2"></div>
+        <div>NEW MENTOR</div>
+    </header>
+    <main>
+        <div id="image-restaurant">
+            <span><img src="c:\Users\KL GABY\Videos\Site Web\IMG-20260610-WA0004.jpg" alt="klgab test"></span>
+        </div>
+        <div class="head-form">Bienvenue chez nous!<br>Protitez de repas à couper le souffle dans une ambiance et une athmosphère chaleureuse.<br><br><br><h3>Faite une reservation</h3></div>
+        <form  action="#">
+            <div class="form-div">
+                <textarea id="name-client" placeholder="Prénom et Post-nom"></textarea>
+            </div>
+            <div class="form-div">
+                <input id="contact-client" type="number/email" placeholder="Adresse mail ou numéro de téléphone"/>
+            </div>
+            <div class="form-div">
+                <div  id="datetime">
+                    <div class="form-div"  id="date">
+                        <label for="date-reservation">DATE</label>
+                        <input id="date-reservation" type="date" placeholder="Dans le format xx/xx/xxxx"/>
+                    <div>
+                    </div class="form-div" id="time">
+                        <label for="time-servation">HEURE</label>
+                        <input id="time-servation" type="time" placeholder="Dans le format xx:xx"/>
+                    </div>
+                </div>
+            </div>
+            <div class="button-set">
+                <button type="submit" class="button-anulation">Annuler</button>
+                <button type="submit" class="button-send">Envoyer</button>
+            </div>
+        </form>
+        <div class="links">
+            <span>Cliquez sur nos liens pour en savoir plus sur nous et sur nos services.</span><br><br><br>
+            <a href="menu.html">MENU</a><br>
+            <a href="boissons.html">BOISSONS</a><br>
+            <a href="contact.html">CONTACTEZ-NOUS</a><br>
+            <a href="activites.html">NOUS CONCERNANT</a><br>
+        </div>
+    </main>
+    <footer>
+        2026 New Mentor | Restauration de qualité
+    </footer>
+</body>
+</html>
